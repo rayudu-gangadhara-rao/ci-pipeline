@@ -32,6 +32,16 @@ pipeline {
                     }
                 }
 
+                stage('3rd step added---') {
+                            steps {
+                                echo "Running DB migration..."
+                                sh """
+                                   sleep 20
+                                   echo 'Migration completed'
+                                """
+                            }
+                        }
+
                 stage('DB Tests') {
                     stages {
 
