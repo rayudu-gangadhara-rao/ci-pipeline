@@ -32,7 +32,7 @@ pipeline {
                     }
                 }
 
-                stage('3rd step added---') {
+                stage('3rd step added---4th change') {
                             steps {
                                 echo "Running DB migration..."
                                 sh """
